@@ -43,7 +43,7 @@ function getStudentData(){
     return new Promise(function(resolve, reject){
         $.ajax({
             method: "GET",
-            url: "http://localhost:8000/students",
+            url: "https://regly-test.herokuapp.com/students",
             success: resolve,
             error: reject
         });
@@ -76,7 +76,7 @@ function createNewStudent(formData){
     return new Promise(function(resolve, reject){
         $.ajax({
             method: "POST",
-            url: "http://localhost:8000/students",
+            url: "https://regly-test.herokuapp.com/students",
             data: formData,
             success: resolve,
             error: reject
